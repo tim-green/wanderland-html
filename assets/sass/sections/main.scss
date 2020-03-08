@@ -1,14 +1,19 @@
 /*
 
-  Main
+  Main - body
   +
 
 */
 
-.main{
-  padding: 0 30px;
+// Body
+.body {
+  @media screen and (min-width: $breakpoint--sm) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      max-width: 610px;
+      overflow-y: scroll;
+  }
 }
 
-.main-success{
-  color: white;
-}
