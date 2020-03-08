@@ -10,11 +10,13 @@
 
 */
 
-@import "modules/mixins";
 @import "modules/variables";
+@import "modules/grid";
+@import "modules/colours";
+@import "modules/normalize";
 @import "modules/base";
+@import "modules/mixins";
 @import "modules/typography";
-
 /*
 
  ==== Plugins ====
@@ -25,10 +27,18 @@
 
 /*
 
- ==== Widgets ====
+ ==== Components ====
 
 */
 
+@import "components/borders";
+@import "components/buttons";
+@import "components/forms";
+@import "components/links";
+@import "components/lists";
+@import "components/margins";
+@import "components/paddings";
+@import "components/utilities";
 
 
 /*
