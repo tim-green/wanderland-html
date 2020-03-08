@@ -5,13 +5,43 @@
 
 */
 
-.header{
-  display: block;
-  padding: 150px 30px 0;
-  width: 420px;
-  max-width: 100%;
+.header {
+  @media screen and (min-width: $breakpoint--sm) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: $header-width;
+  }
+}
 
-  h1{
-    margin: 0 0 30px;
+.navigation {
+  text-transform: uppercase;
+
+  .current { color: $primary-color !important; }
+
+  li { letter-spacing: 1px; }
+
+  @media screen and (max-width: $breakpoint--sm) {
+      margin-top: -0.5rem;
+  }
+}
+
+.mobile-social-links {
+  @media screen and (max-width: $breakpoint--ty) {
+      display: none;
+  }
+}
+
+// Hero
+.hero-container { height: 200px; }
+
+.hero {
+  @media screen and (min-width: $breakpoint--sm) {
+      position: fixed;
+      top: 0;
+      left: $header-width;
+      bottom: 0;
+      width: calc(100% - 610px - 3.5rem);
   }
 }
