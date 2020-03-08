@@ -5,11 +5,46 @@
 
 */
 
-body{
-  background: white; // Change to $color-primary
+html {
+  box-sizing: border-box; // [4]
+  font-family: $font-family--base; // [2]
+  font-size: $font-size--mobile; // [2]
+  font-style: normal; // [2]
+  font-weight: $font-weight--base; // [2]
+  min-height: 100%; // Ensure the page always fills at least the entire height of the viewport
+  -webkit-tap-highlight-color: rgba(0,0,0,0); // [3]
+
+  @media screen and (min-width: $breakpoint--sm) {
+      font-size: $font-size--desktop;
+  }
+}
+
+*, *:before, *:after { box-sizing: inherit; } // [4]
+
+body {
+  background-color: $tan !important; // [2]
+  color: $text-color;
+  line-height: $line-height--base;
   margin: 0;
-  font: 14px/20px sans-serif;
-  color: $color-primary;
+  padding: 0;
+  -moz-osx-font-smoothing: grayscale; // [1]
+}
+
+::-moz-selection {
+  background-color: $primary-color;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background-color: $primary-color;
+  color: #fff;
+  text-shadow: none;
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
 }
 
 .container {
@@ -18,3 +53,18 @@ body{
   max-width: $max-container-width;
   width: 90%;
 }
+
+//embeds
+img, canvas, iframe, video, svg { max-width: 100%; }
+
+.logo-container { bottom: .6rem; }
+
+.logo--mobile {font-family: $serif; max-height: 19px; }
+
+.logo--desktop { max-width: 19px; }
+
+.icon {
+    max-width: 18px;
+    max-height: 18px;
+}
+
