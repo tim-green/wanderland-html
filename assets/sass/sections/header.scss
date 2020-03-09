@@ -36,6 +36,11 @@
   }
 }
 
+.navigation .no-bullets{
+  @media screen and (max-width: $breakpoint--sm) {
+      padding-left: 0;
+  }
+}
 .mobile-social-links {
   @media screen and (max-width: $breakpoint--ty) {
       display: none;
