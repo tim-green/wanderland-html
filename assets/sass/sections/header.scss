@@ -59,3 +59,7 @@
       width: calc(100% - 610px - 3.5rem);
   }
 }
+.hero:hover{
+  filter: grayscale(80%);
+  transition: 0.2s ease-in-out;
+}
