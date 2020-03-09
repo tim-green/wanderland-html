@@ -29,3 +29,9 @@
 .link--text:active {
     color: $link-hover-color;
 }
+
+// Phone Links
+a[href^=tel] {
+    color: $text-color;
+    text-decoration: none;
+  }
