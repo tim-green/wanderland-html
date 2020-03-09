@@ -7,3 +7,4 @@
 - SASS
 - Font Awesome icons for social icons
 - Images via Unsplash
+- Using FormSubmit for contact form message submissions
