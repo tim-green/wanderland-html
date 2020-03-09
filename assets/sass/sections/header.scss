@@ -13,6 +13,15 @@
       bottom: 0;
       width: $header-width;
   }
+  .logo-container a, .show-on-mobile a{
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  .logo-container a:hover, .show-on-mobile a:hover{
+    color: $red;
+    transition: $fade;
+  }
 }
 
 .navigation {
